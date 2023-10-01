@@ -1,7 +1,7 @@
 /* Constants */
 :root {
-  --color-blue: rgb(128, 217, 255);
-  --color-purple: rgb(153, 115, 230);
+  --color-blue: #80d9ff;
+  --color-purple: #9973e6;
 }
 
 body {
@@ -80,20 +80,17 @@ nav li {
   border: 3px solid white;
   border-radius: 10px;
   padding: 10px 20px;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 
 nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  transition: color 0.3s; /* Add transition for text color change */
 }
 
 nav li:hover {
   background-color: white; /* Full white background on hover */
-  /* border-image: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
-  border-image-slice: 1; */
 }
 
 .border {
@@ -113,6 +110,7 @@ nav li:hover {
   transition: webkit-mask 0.3s;
 }
 
-nav li:hover a {
+nav a:hover li {
   color: #222; /* Change text color on hover */
+  transition: color 0.1s; /* Add transition for text color change */
 }
